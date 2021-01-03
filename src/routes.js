@@ -1,7 +1,8 @@
 import { Route, Switch } from 'react-router';
 import Home from './container/home';
+import NoMatch from './component/common/noMatch';
 
-const Routes = (
+const Routes = () => (
 	<div>
 		<Switch>
 			<Route exact path="/">
