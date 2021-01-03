@@ -1,24 +1,22 @@
 import logo from './logo.svg';
 import './stylesheets/App.css';
 
+import Routes from './routes';
+import TopMenu from './component/common/topMenu';
+import BottomMenu from './component/common/bottomMenu';
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <TopMenu />
       </header>
-    </div>
+      <main>
+        <Routes />
+      </main>
+    <footer>
+      <BottomMenu />
+    </footer>
   );
 }
 

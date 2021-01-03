@@ -1,5 +1,5 @@
 {
-    "top-menu": [
+    "topMenu": [
         {"text": "삼모 게시판",
         "link": ""
         },
@@ -16,7 +16,7 @@
         "link": ""
         }
     ],
-    "mid-menu": [  {
+    "midMenu": [  {
         "text": "세력도",
         "link": ""},
         {"text": "세력일람",
@@ -24,7 +24,7 @@
         {"text": "장수일람",
         "link": ""}
     ],
-    "bottom-menu": [
+    "bottomMenu": [
         {"text": "명장일람",
         "link": ""},
         {"text": "명예의전당",
