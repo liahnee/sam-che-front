@@ -1,8 +1,8 @@
 
-import Links from './data/links.json';
-const { topMenu } = Links;
+import Links from '../../data/links.json';
+const { bottomMenu } = Links;
 
-export default function TopMenu(props) {
+export default function BottomMenu(props) {
 
 
 

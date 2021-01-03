@@ -1,20 +1,15 @@
 import { Route, Switch } from 'react-router';
+import Home from './container/home';
 
 const Routes = (
 	<div>
 		<Switch>
-			{/* <Route exact path="/">
+			<Route exact path="/">
 				<Home />
-			</Route>
-			<Route path="/about">
-				<About />
-			</Route>
-			<Route path="/:user">
-				<User />
 			</Route>
 			<Route>
 				<NoMatch />
-			</Route> */}
+			</Route>
 		</Switch>
 	</div>
 );
