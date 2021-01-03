@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from "react-redux";
 
- const Home = props => {
+ const CharacterInfo = props => {
 
 
 
@@ -23,4 +23,4 @@ const dToP = dispatch => {
     };
 }
 
-export default connect(sToP, dToP)(Home);
+export default connect(sToP, dToP)(CharacterInfo);
