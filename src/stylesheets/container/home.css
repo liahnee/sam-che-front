@@ -1,0 +1,5 @@
+.home {
+  display: grid;
+  grid-template-areas: "a t" "b t" "c d"; }
+
+/*# sourceMappingURL=home.css.map */

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-// import '../stylesheets/turnTable.css';
+import '../../stylesheets/component/home/turnTable.css';
 
-import { Table } from 'semantic-ui-react';
+// import { Table } from 'semantic-ui-react';
 
 
 const NUMSOFROW = () => {
@@ -21,7 +21,7 @@ export default function TurnTable() {
 
     return (
         <div className='turn-table'> 
-            <Table color='blue'>
+            {/* <Table color='blue'>
                 <Table.Header>
                     <Table.Row>
                         <Table.HeaderCell></Table.HeaderCell>
@@ -40,7 +40,7 @@ export default function TurnTable() {
                         )
                     })}
                 </Table.Body>
-            </Table>
+            </Table> */}
         </div>
     );
 }

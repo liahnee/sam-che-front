@@ -1,5 +1,5 @@
 import React from 'react';
-import '../stylesheets/map.css';
+import '../../stylesheets/component/common/map.css';
 
 const Map = props => {
 

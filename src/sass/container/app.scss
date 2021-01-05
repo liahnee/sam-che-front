@@ -1,4 +1,36 @@
+html {
+    width: 100vw;
+}
 .app {
     height: 100vh;
-    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+header, footer {
+    width: 100%;
+}
+
+main {
+    width: 900px;
+    height: 100%;
+    background-color: bisque;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: rgb(161, 161, 161);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: mediumturquoise;
 }
