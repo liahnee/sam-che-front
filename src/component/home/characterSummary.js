@@ -6,7 +6,8 @@ const CharacterSummary = props => {
 
 
     return (
-        <div className='characterSummary'> 
+        <div id='character-summary'> 
+        this
         </div>
     );
 }

@@ -4,7 +4,7 @@ const { topMenu } = Links;
 
 export default function TopMenu(props) {
 	return (
-		<nav id="topMenu">
+		<nav id="top-menu">
 			<ul>
 				{topMenu.map((item, idx) => {
 					return (

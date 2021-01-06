@@ -20,7 +20,7 @@ export default function TurnTable() {
     console.log(NUMSOFROW())
 
     return (
-        <div className='turn-table'> 
+        <div id='turn-table'> 
             {/* <Table color='blue'>
                 <Table.Header>
                     <Table.Row>

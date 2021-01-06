@@ -1,7 +1,32 @@
 .home {
+    min-height: 100vh;
+
     display: grid;
+    grid-template-columns: repeat(auto-fill, 50px);
+    grid-template-rows: repeat(auto-fill, 200px);
     grid-template-areas: 
-    "a t"
-    "b t"
-    "c d";
+    "a a a a a  a a a a a  a a a t t  t t t t t"
+    "a a a a a  a a a a a  a a a t t  t t t t t"
+    "b b b b b  b b b b b  b b b t t  t t t t t"
+    "c c c c c  c c c c c  d d d d d  d d d d d";
+
+
+    .map {
+        grid-area: a;
+    }
+    #turn-table {
+        grid-area: t;
+    }
+    
+    #national-summary {
+        grid-area: b;
+    }
+    
+    #character-summary {
+        grid-area: c;
+    }
+
+    #character-history {
+        grid-area: d;
+    }
 }

@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,kBAAmB;EACf,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,IAAI;EACtB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC",
+"sources": ["../../../sass/component/home/characterSummary.scss"],
 "names": [],
 "file": "characterSummary.css"
 }

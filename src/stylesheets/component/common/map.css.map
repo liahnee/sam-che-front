@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,IAAK;EACD,KAAK,EAAC,KAAK;EACX,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,KAAK",
+"sources": ["../../../sass/component/common/map.scss"],
 "names": [],
 "file": "map.css"
 }

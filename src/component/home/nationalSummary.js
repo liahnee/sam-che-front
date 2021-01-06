@@ -6,7 +6,7 @@ const NationalSummary = props => {
 
 
     return (
-        <div className='nationalSummary'> 
+        <div id='national-summary'> 
         </div>
     );
 }
