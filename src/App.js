@@ -3,6 +3,7 @@ import './stylesheets/container/app.css';
 import Routes from './routes';
 import TopMenu from './component/common/topMenu';
 import BottomMenu from './component/common/bottomMenu';
+import Footer from './component/common/footer';
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 			</main>
 			<footer>
 				<BottomMenu />
+				<Footer />
 			</footer>
 		</div>
 	);
