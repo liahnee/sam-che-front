@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../../stylesheets/component/home/turnTable.css';
+import '../../stylesheets/container/turnTable.css';
 
 // import { Table } from 'semantic-ui-react';
 

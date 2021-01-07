@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,aAAc;EACV,KAAK,EAAE,IAAI;EACX,UAAU,EAAC,KAAK;EAChB,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,QAAQ",
+"sources": ["../../../sass/component/home/policyBoard.scss"],
+"names": [],
+"file": "policyBoard.css"
+}

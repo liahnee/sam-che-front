@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAAA,WAAY;EACR,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,SAAS",
-"sources": ["../../../sass/component/home/turnTable.scss"],
+"sources": ["../../sass/container/turnTable.scss"],
 "names": [],
 "file": "turnTable.css"
 }
