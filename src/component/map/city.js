@@ -1,12 +1,12 @@
 import React from 'react';
 import '../../stylesheets/component/common/map.css';
 
-const Map = props => {
-
-
+const City = props => {
 
     return (
-        <div className='map'> 
+        <div className='city'> 
+            <img />
+            <div className="city-name">{props.name}</div>
         </div>
     );
 }

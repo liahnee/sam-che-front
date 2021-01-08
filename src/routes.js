@@ -1,5 +1,5 @@
 import { Route, Switch } from 'react-router';
-import Home from './container/home';
+import Home from './container/home/home';
 import NoMatch from './component/common/noMatch';
 
 const Routes = () => (
