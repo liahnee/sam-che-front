@@ -1,0 +1,37 @@
+{
+    "result": true,
+    "keepRecent": true,
+    "private": [],
+    "public": [{
+            "id": 1326,
+            "msgType": "public",
+            "src": { "id": 1, "name": "운영자", "nation_id": 3, "nation": "N0vaMobile", "color": "#6495ED", "icon": "https://sam.hided.net/image/icons/default.jpg" },
+            "dest": [],
+            "text": "안녕하세요1",
+            "option": [],
+            "time": "2021-01-09 01:32:56"
+        },
+        {
+            "id": 1325,
+            "msgType": "public",
+            "src": { "id": 869, "name": "Hide_D", "nation_id": 0, "nation": "재야", "color": "#000000", "icon": "https://sam.hided.net/sam/d_pic/9f0a2a8.png?=20200106" },
+            "dest": [],
+            "text": "안녕하세요1",
+            "option": [],
+            "time": "2021-01-09 01:32:53"
+        }
+    ],
+    "national": [{
+        "id": 1324,
+        "msgType": "national",
+        "src": { "id": 1, "name": "운영자", "nation_id": 3, "nation": "N0vaMobile", "color": "#6495ED", "icon": "https://sam.hided.net/image/icons/default.jpg" },
+        "dest": { "id": 0, "name": "", "nation_id": 3, "nation": "N0vaMobile", "color": "#6495ED", "icon": "https://sam.hided.net/image/icons/default.jpg" },
+        "text": "안녕하세요2",
+        "option": [],
+        "time": "2021-01-09 01:32:52"
+    }],
+    "diplomacy": [],
+    "sequence": 1326,
+    "nationID": 3,
+    "generalName": "운영자"
+}
