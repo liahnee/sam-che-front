@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,WAAY;EACR,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,SAAS",
+"mappings": "AAAA,WAAY;EACR,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,SAAS;EAC3B,OAAO,EAAE,IAAI",
 "sources": ["../../sass/container/turnTable.scss"],
 "names": [],
 "file": "turnTable.css"

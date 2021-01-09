@@ -1,46 +1,106 @@
 import React, { useState, useEffect } from 'react';
 import '../../stylesheets/container/turnTable.css';
 
-// import { Table } from 'semantic-ui-react';
+import Turn from '../../components/home/turn';
+
+const TurnTable = (props) => {
+
+	// highlight to select functons 
+	const [ highlight, setHighlight ] = useState(false);
+	const [ selected, setSelected ] = useState([]);
 
 
-const NUMSOFROW = () => {
+	const onMouseEnter = (props) => {};
 
-    const max = 24;
-    const arr = [];
-    let i;
-    for (i = 1; i <= max; i ++) {
-        arr.push(i);
-    };
+	const onMouseDown = (props) => {
+		setHighlight(true);
+	};
 
-    return arr;
-}
+	const onMouseUp = (props) => {
+		setHighlight(false);
+	};
 
-export default function TurnTable() {
-    console.log(NUMSOFROW())
+	const onMouseClick = (turn) => {
+		const isSelected = selected.includes(turn) ? true : false;
+		if (isSelected) {
+			//filter it out
+		} else {
+			selected.push(turn);
+		};
+	};
 
-    return (
-        <div id='turn-table'> 
-            {/* <Table color='blue'>
-                <Table.Header>
-                    <Table.Row>
-                        <Table.HeaderCell></Table.HeaderCell>
-                        <Table.HeaderCell>Time</Table.HeaderCell>
-                        <Table.HeaderCell>Turn</Table.HeaderCell>
-                    </Table.Row>
-                </Table.Header>
-                <Table.Body>
-                    {NUMSOFROW().map( (n) => {
-                        return (
-                            <Table.Row key={n}>
-                                <Table.Cell>{n}</Table.Cell>
-                                <Table.Cell></Table.Cell>
-                                <Table.Cell></Table.Cell>
-                            </Table.Row>
-                        )
-                    })}
-                </Table.Body>
-            </Table> */}
-        </div>
-    );
-}
+
+	// options to selecting turns  functions
+	
+	const onSelectAll = () => {
+
+		// setSelected([]);
+	};
+
+	const onSelectOdds = () => {
+
+	}
+
+
+	// repeat functions 
+
+
+
+	const submit = (props) => {};
+
+
+
+
+
+	// rendering functions 
+	const renderTurns = (props) => {
+
+
+		return turnList.map((turn, idx) => {
+			return (
+				<Turn selectedList={selected} />
+			);
+		});
+	};
+
+	const renderTurnOptions = (props) => {
+        // render turn options
+        return (
+            <div>
+
+            </div>
+        );
+	};
+
+
+
+
+
+
+
+
+	return (
+		<div id="turn-table">
+			{renderTurns()} 
+            <div>
+				<div>
+					<div>전체</div>
+					<div>홀수</div>
+					<div>짝수</div>
+					</div>
+            {renderTurnOptions()}
+                
+            </div>
+		</div>
+	);
+};
+
+const sToP = (state) => {
+	return {};
+};
+
+const dToP = (dispatch) => {
+	return {};
+};
+
+export default connect(sToP, dToP)(TurnTable);

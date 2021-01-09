@@ -1,6 +1,7 @@
 #turn-table {
   min-width: 100%;
   height: 100%;
-  background-color: mintcream; }
+  background-color: mintcream;
+  display: flex; }
 
 /*# sourceMappingURL=turnTable.css.map */

@@ -1,0 +1,30 @@
+{
+    "cityInfo": {
+        "cityID": 39,
+        "name": "교지",
+        "level": 5,
+        "nation": 6,
+        "supply": 1,
+        "front": 1,
+        "pop": 300000,
+        "pop_max": 319500,
+        "agri": 5200,
+        "agri_max": 5800,
+        "comm": 5700,
+        "comm_max": 5900,
+        "secu": 3000,
+        "secu_max": 4000,
+        "trust": 100,
+        "trade": null,
+        "def": 3345,
+        "def_max": 5800,
+        "wall": 3345,
+        "wall_max": 5900,
+        "region": 5,
+        "officer": {
+            "4": [10, "Hide_D"],
+            "3": [4, "관우"],
+            "2": null
+        }
+    }
+}
