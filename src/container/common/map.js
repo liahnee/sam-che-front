@@ -25,8 +25,8 @@ const Map = props => {
 
     return (
         <div className='map'> 
-            <div className='map bg-1'></div>
-            <div className='map bg-2'></div>
+            <div className='bg-1'></div>
+            <div className='bg-2'></div>
             {/* {cities(props.cities)} */}
         </div>
     );

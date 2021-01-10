@@ -50,11 +50,12 @@ const TurnTable = (props) => {
 		const turns = [];
 		while (i < 31) {
 			turns.push([ i, '197yr 7mo', '인재 탐색' ]);
+			i++;
 		}
 
 		console.log(turns);
 		return turns.map((turn, idx) => {
-			return <Turn turn={turn} />;
+			return <Turn turn={turn} key={idx}/>;
 		});
 	};
 
@@ -65,7 +66,9 @@ const TurnTable = (props) => {
 
 	return (
 		<div id="turn-table">
+			<div className="turns">
 			{renderTurns()}
+				</div>
 			<div>
 				<div>
 					<div>전체</div>

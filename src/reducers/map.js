@@ -4,8 +4,11 @@ const initialState = {
 }
 
 
-export default function mapReducer(state = initalState, action) {
+export default function mapReducer(state = initialState, action) {
     switch(action.type) {
+
+        case 'ADD_MAP':
+            return {"city-position": action.payload};
 
         default:
             return state; 
