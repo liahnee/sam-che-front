@@ -13,9 +13,8 @@ const Map = props => {
         cities.map((city, idx) => {
 
             const { name } = city;
-            return (
-                <City showName={showName} name={name} size={} owner={}/>
-            )
+            return
+            //  <City showName={showName} name={name} size={} owner={}/>
         })
     };
 

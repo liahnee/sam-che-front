@@ -4,7 +4,7 @@ import '../../stylesheets/container/turnTable.css';
 const Turn = (props) => {
 	return (
 		<div className="turn">
-			<div className="turn-order">
+			{/* <div className="turn-order">
 				<p>
 					#&nbsp;-&nbsp;
 					<span className="turn-time">7:11</span>
@@ -14,7 +14,7 @@ const Turn = (props) => {
 				{'197'}year&nbsp;{'1'}month
 			</div>
 			<div className="turn-action">{'인재탐색'}</div>
-			<div />
+			<div /> */}
 		</div>
 	);
 };

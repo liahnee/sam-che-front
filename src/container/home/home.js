@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from "react-redux";
-import '../stylesheets/container/home.css';
+import '../../stylesheets/container/home.css';
 
 import PolicyBoard from '../../component/home/policyBoard';
 import Map from '../common/map';
-import TurnTable from '../user/turnTable';
+import TurnTable from './turnTable';
 import NationalSummary from '../../component/home/nationalSummary';
 import CharacterSummary from '../../component/home/characterSummary';
 
