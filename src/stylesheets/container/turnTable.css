@@ -11,4 +11,7 @@
 .turn {
   display: flex; }
 
+.highlight {
+  background-color: beige; }
+
 /*# sourceMappingURL=turnTable.css.map */

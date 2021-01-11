@@ -10,9 +10,14 @@ import Turn from '../../component/home/turn';
 const TurnTable = (props) => {
 	// highlight to select functons
 	const [ highlight, setHighlight ] = useState(false);
-	const [ selected, setSelected ] = useState([]);
+	const [ selectedTurns, setSelectedTurns ] = useState([]);
 
-	const onMouseEnter = (props) => {};
+	const onMouseEnter = (turn) => {
+
+		if (highlight) {
+			select(turn);
+		};
+	};
 
 	const onMouseDown = (props) => {
 		setHighlight(true);
@@ -23,15 +28,28 @@ const TurnTable = (props) => {
 	};
 
 	const onMouseClick = (turn) => {
-		const isSelected = selected.includes(turn) ? true : false;
-		if (isSelected) {
-			//filter it out
-		} else {
-			selected.push(turn);
-		}
+		select(turn);
 	};
 
 	// options to selecting turns  functions
+
+	const select = (turn) => {
+		console.log("inside Select")
+		console.log("is selected Turns + turn", selectedTurns, turn)
+		let isSelected = false;
+		selectedTurns.forEach(element => {
+			if (element[0] === turn[0]){
+				isSelected = true;
+			}
+		});
+
+		if (isSelected) {
+			const filtered = selectedTurns.filter(item => item[0] !== turn[0] );
+			setSelectedTurns(filtered);
+		} else {
+			setSelectedTurns([...selectedTurns, turn]);
+		};
+	};
 
 	const onSelectAll = () => {
 		// setSelected([]);
@@ -51,11 +69,9 @@ const TurnTable = (props) => {
 		while (i < 31) {
 			turns.push([ i, '197yr 7mo', '인재 탐색' ]);
 			i++;
-		}
-
-		console.log(turns);
+		};
 		return turns.map((turn, idx) => {
-			return <Turn turn={turn} key={idx}/>;
+			return <Turn turn={turn} key={idx} onClick={onMouseClick} selected={selectedTurns}/>;
 		});
 	};
 
