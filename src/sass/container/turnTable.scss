@@ -10,10 +10,21 @@
     flex-direction: column;
 }
 
-.turn {
-    display: flex;
-}
-
 .highlight {
     background-color: beige;
+}
+
+
+// turn component css
+
+.turn {
+    display: flex;
+    flex-direction: column;
+}
+
+.turn-order {
+    display: flex;
+    & div:first-child {
+        min-width: 5rem;
+    }
 }

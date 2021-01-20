@@ -28,25 +28,29 @@ const TurnTable = (props) => {
 	};
 
 	const onMouseClick = (turn) => {
+		console.log(turn);
 		select(turn);
 	};
 
 	// options to selecting turns  functions
 
 	const select = (turn) => {
-		console.log("inside Select")
-		console.log("is selected Turns + turn", selectedTurns, turn)
+		// console.log("inside Select")
+		// console.log("is selected Turns + turn", selectedTurns, turn)
 		let isSelected = false;
 		selectedTurns.forEach(element => {
-			if (element[0] === turn[0]){
+			// console.log("element ", element.idx)
+			if (element.idx === turn.idx){
 				isSelected = true;
-			}
+			};
 		});
 
 		if (isSelected) {
-			const filtered = selectedTurns.filter(item => item[0] !== turn[0] );
+			console.log("true")
+			const filtered = selectedTurns.filter(item => item.idx !== turn.idx );
 			setSelectedTurns(filtered);
 		} else {
+			console.log("false")
 			setSelectedTurns([...selectedTurns, turn]);
 		};
 	};
@@ -67,7 +71,7 @@ const TurnTable = (props) => {
 		let i = 1;
 		const turns = [];
 		while (i < 31) {
-			turns.push([ i, '197yr 7mo', '인재 탐색' ]);
+			turns.push({ time: `${i+1}:11`, date:`197yr ${i+1}mo`, action:'인재 탐색', idx: i+1 });
 			i++;
 		};
 		return turns.map((turn, idx) => {
