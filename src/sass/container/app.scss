@@ -1,5 +1,6 @@
 html {
     width: 100%;
+    cursor: default;
 }
 .app {
     width: 100%;
@@ -31,6 +32,7 @@ a {
     text-decoration: none;
     font-weight: 600;
 }
+
 
 a:hover {
     color: mediumturquoise;
