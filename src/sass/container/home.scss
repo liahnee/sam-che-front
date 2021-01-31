@@ -1,15 +1,20 @@
+    // "p p p p p  p p p p p  p p p p p  p p p p p"
+    // "a a a a a  a a a a a  a a a a t  t t t t t"
+    // "a a a a a  a a a a a  a a a a t  t t t t t"
+    // "b b b b b  b b b b b  b b b b t  t t t t t"
+    // "c c c c c  c c c c c  d d d d d  d d d d d";
 .home {
     min-height: 100vh;
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, 50px);
-    grid-template-rows: repeat(auto-fill, 200px);
+    // grid-template-columns: repeat(auto-fill, 50px);
+    grid-template-columns: min-content;
+    // grid-template-rows: min-content;
     grid-template-areas: 
-    "p p p p p  p p p p p  p p p p p  p p p p p"
-    "a a a a a  a a a a a  a a a t t  t t t t t"
-    "a a a a a  a a a a a  a a a t t  t t t t t"
-    "b b b b b  b b b b b  b b b t t  t t t t t"
-    "c c c c c  c c c c c  d d d d d  d d d d d";
+    "p p"
+    "a t"
+    "b t"
+    "c d";
 
     .policy-board {
         grid-area: p;

@@ -1,6 +1,24 @@
-.map {
-  width: 650px;
-  height: 450px;
-  background-color: brown; }
+.world-map {
+  width: 700px;
+  height: 500px;
+  background-color: brown;
+  position: relative; }
+
+.world-map::before, .world-map::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 700px;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.world-map::before {
+  background-image: url(https://sam.hided.net/image/game/map/che/bg_winter.jpg); }
+
+.world-map::after {
+  background-image: url(https://sam.hided.net/image/game/map/che/miniche_road.png); }
 
 /*# sourceMappingURL=map.css.map */
